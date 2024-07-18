@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+}
+body {
+  background-color: #f2f2f2;
+}
+/* start header */
+
+header {
+  background-color: #1aa3ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  color: #fff;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* end header */
+
+/* start main */
+
+main {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+main aside {
+  flex: 1;
+  padding: 15px;
+}
+main section {
+  flex: 4;
+}
+main aside form input,
+a,
+p {
+  margin-left: 10px;
+}
+main aside form input {
+  padding: 4px;
+  cursor: pointer;
+}
+main aside form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+main aside form input[type="reset"],
+input[type="search"] {
+  width: 80%;
+}
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main aside form p {
+  padding-bottom: 10px;
+}
+
+main aside form a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+main aside form a:hover {
+  text-decoration: underline;
+}
+p {
+  color: #949494;
+  text-align: justify;
+}
+/* end main */
+
+/* start section */
+
+section {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  overflow: auto;
+}
+
+section article {
+  margin: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 15px;
+  transition: 1s;
+}
+
+section article:hover{
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.7);
+}
+
+section article p,
+img,
+h3 {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+section article img {
+  width: 100%;
+}
+.flex form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #fff;
+  background-color: #1aa3ff;
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+}
+/* end section */
+
+/* start footer */
+
+footer {
+  margin-top: 20px;
+  background-color: rgb(30, 30, 92);
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+/* end footer */
