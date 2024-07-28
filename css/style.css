@@ -55,6 +55,7 @@ main aside {
   position: sticky;
   top: 0;
   background: inherit;
+  container-type: inline-size;
 }
 main section {
   flex: 4 1 520px;
@@ -76,7 +77,7 @@ main aside form {
 }
 main aside form input[type="reset"],
 input[type="search"] {
-  width: 100%;
+  width: calc(100% - 10px); /* margin-left */
 }
 .my-10 {
   margin-top: 10px;
@@ -104,6 +105,12 @@ main aside form a:hover {
   gap: 10px;
   flex-wrap: wrap;
 }
+@container (width < 50vh) {
+  .filters {
+    flex-direction: column;
+  }    
+}
+
 
 .filters>* {
   flex: 1 1 fit-content;
