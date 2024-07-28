@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 80%;
+    border-color: grey;
+    box-shadow: (0,0,0,0.25);
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    left: 25px;
+    top: 50px;
+    box-shadow: 0px 0px 2px;
+    margin-left: 50px;
+
+}
+.acceuil:hover{
+    color: rgb(176, 176, 79);
+}
+.acceuil{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 20px;
+    transition: color .1s linear;
+    text-decoration: none;
+}
+.infoPersonnelles{
+    position: relative;
+    top: 100px;
+    left: 40px;
+   
+
+}
+.txtarea{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    
+}
+.infos{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: #7ab6db;
+}
+.adress{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: #7ab6db;
+}
+.dscadresse {
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+details {
+    box-shadow: 0 0 2px;
+    max-width: 800px;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+}
+.livraison{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: #7ab6db;
+}
+.rules{
+    position: relative;
+    left: 50px;
+    bottom: 17px;
+    color:black;
+}
+.orderithems{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    color: #7ab6db;
+    border: 2px solid grey;
+   
+}
+.price{
+    position: relative;
+    left: 660px;
+    bottom: 300px;
+    color: black;
+}
+.dispo{
+    position: relative;
+    left: 650px;
+    bottom: 275px;
+    color: rgb(81, 185, 46);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.disc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: grey;
+}
