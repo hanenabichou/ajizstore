@@ -17,10 +17,12 @@ header {
   padding: 10px 10px;
   color: #fff;
   align-items: center;
+  flex-wrap: wrap;
 }
 header nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 header nav ul li {
   margin: 10px;
@@ -42,14 +44,21 @@ main {
   display: flex;
   background-color: #f2f2f2;
   height: 100vh;
+  overflow: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 main aside {
-  flex: 1;
+  flex: 1 1 250px;
   padding: 15px;
+  position: sticky;
+  top: 0;
+  background: inherit;
+  container-type: inline-size;
 }
 main section {
-  flex: 4;
+  flex: 4 1 520px;
 }
 main aside form input,
 a,
@@ -68,7 +77,7 @@ main aside form {
 }
 main aside form input[type="reset"],
 input[type="search"] {
-  width: 80%;
+  width: calc(100% - 10px); /* margin-left */
 }
 .my-10 {
   margin-top: 10px;
@@ -90,6 +99,23 @@ main aside form a {
 main aside form a:hover {
   text-decoration: underline;
 }
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+@container (width < 50vh) {
+  .filters {
+    flex-direction: column;
+  }    
+}
+
+
+.filters>* {
+  flex: 1 1 fit-content;
+}
+
 p {
   color: #949494;
   text-align: justify;
@@ -101,7 +127,7 @@ p {
 section {
   padding: 15px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   overflow: auto;
 }
 
