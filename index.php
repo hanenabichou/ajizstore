@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+$logged = isset($_SESSION['user']);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,8 +25,14 @@
       </nav>
       <nav>
         <ul>
+          <?php
+          if($logged) {?>
+          <li><a><?= $_SESSION['user']['name'] ?></a></li>
+          <li><a href="#">Logout</a></li>
+          <?php } else { ?>
           <li><a href="#">Inscription</a></li>
           <li><a href="#">Connexion</a></li>
+          <?php } ?>
         </ul>
       </nav>
     </header>
