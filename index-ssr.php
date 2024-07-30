@@ -98,23 +98,7 @@
   </footer>
   <script>
     async function handleProducts(response) {
-      const products = await response.json()
-      const containerElement = document.getElementById('list-products')
-      for (const product of products) {
-        containerElement.innerHTML = containerElement.innerHTML + `
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>${product['name']}</h3>
-          <p>${product['description']}</p>
-          <div class="flex">
-            <form>
-              <strong>Prix : ${product['price']} TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-`
-      }
+      await response.json()
     }
     fetch('api/list-products.php').then(handleProducts)
   </script>
