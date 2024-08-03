@@ -90,18 +90,26 @@
         </div>
       </form>
     </aside>
-    <section id="list-products">
+    <section>
+    <?php
+    require('./products.php');
+    foreach ($products as $product) { ?>
+      <article>
+          <img src="./images/mac.jpg" />
+          <h3><?=$product['name']?></h3>
+          <p><?=$product['description']?></p>
+          <div class="flex">
+            <form>
+              <strong>Prix : <?=$product['price']?> TND</strong>
+              <button class="btn">Ajouter au panier</button>
+            </form>
+          </div>
+        </article>
+    <?php } ?>
     </section>
   </main>
   <footer>
     <p>Copyright Ⓒ - Ajiz Store - 2024</p>
   </footer>
-  <script>
-    async function handleProducts(response) {
-      await response.json()
-    }
-    fetch('api/list-products.php').then(handleProducts)
-  </script>
 </body>
-
 </html>
