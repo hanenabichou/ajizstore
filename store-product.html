@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="store-product.css" />
+<article>
+  <img src="./images/mac.jpg" />
+  <h3><slot name="name"></slot></h3>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, dolores?
+  </p>
+  <div class="flex">
+    <form>
+      <strong>Prix : <span id="price"></span> TND</strong>
+      <button class="btn">Ajouter au panier</button>
+    </form>
+  </div>
+</article>
+<script>
+  root.getElementById('price').textContent = host.getAttribute('price')
+</script>

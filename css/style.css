@@ -61,7 +61,7 @@ main aside {
   container-type: inline-size;
 }
 main section {
-  flex: 4 1 520px;
+  flex: 20 1 520px;
 }
 main aside form input,
 a,
@@ -134,40 +134,7 @@ section {
   overflow: auto;
 }
 
-section article {
-  margin: 20px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  padding: 15px;
-  transition: 1s;
-}
 
-section article:hover{
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.7);
-}
-
-section article p,
-img,
-h3 {
-  padding-bottom: 15px;
-  width: 100%;
-}
-
-section article img {
-  width: 100%;
-}
-.flex form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
-  color: #fff;
-  background-color: #1aa3ff;
-  border-radius: 5px;
-  border: none;
-  padding: 7px;
-  cursor: pointer;
-}
 /* end section */
 
 /* start footer */

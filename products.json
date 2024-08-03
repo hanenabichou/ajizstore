@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Dell XPS 13",
+    "price": 999.99,
+    "category": "Laptop",
+    "description": "The Dell XPS 13 offers a stunning 13.4-inch display, 11th Gen Intel Core processors, and an elegant, thin design. Ideal for professionals and students alike."
+  },
+  {
+    "name": "Apple MacBook Air",
+    "price": 1099.0,
+    "category": "Laptop",
+    "description": "The Apple MacBook Air features the powerful M1 chip, a Retina display, and up to 18 hours of battery life. Perfect for both everyday tasks and demanding workloads."
+  },
+  {
+    "name": "HP Envy 15",
+    "price": 1199.99,
+    "category": "Laptop",
+    "description": "The HP Envy 15 boasts a sleek design, a vibrant 4K display, and powerful performance with the latest Intel Core processors and NVIDIA graphics."
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "price": 1299.99,
+    "category": "Laptop",
+    "description": "The Lenovo ThinkPad X1 Carbon is a premium business laptop with a durable design, long battery life, and powerful performance for professional use."
+  },
+  {
+    "name": "Acer Predator Helios 300",
+    "price": 1499.99,
+    "category": "Laptop",
+    "description": "The Acer Predator Helios 300 is a high-performance gaming laptop with a powerful NVIDIA GeForce RTX graphics card, 10th Gen Intel Core processor, and a 144Hz refresh rate display."
+  },
+  {
+    "name": "Asus ROG Zephyrus G14",
+    "price": 1399.99,
+    "category": "Laptop",
+    "description": "The Asus ROG Zephyrus G14 is a powerful gaming laptop with an AMD Ryzen 9 processor, NVIDIA GeForce RTX 2060 graphics, and a 120Hz display."
+  },
+  {
+    "name": "Microsoft Surface Laptop 4",
+    "price": 1299.99,
+    "category": "Laptop",
+    "description": "The Microsoft Surface Laptop 4 combines elegant design, a high-resolution touchscreen, and powerful performance with 11th Gen Intel Core processors."
+  },
+  {
+    "name": "Razer Blade 15",
+    "price": 1599.99,
+    "category": "Laptop",
+    "description": "The Razer Blade 15 is a high-end gaming laptop featuring a 10th Gen Intel Core i7 processor, NVIDIA GeForce RTX 2070, and a 144Hz Full HD display."
+  },
+  {
+    "name": "Apple iMac 24-inch",
+    "price": 1499.0,
+    "category": "Desktop",
+    "description": "The Apple iMac 24-inch features the powerful M1 chip, a stunning 4.5K Retina display, and a sleek all-in-one design perfect for any workspace."
+  },
+  {
+    "name": "HP Omen 30L",
+    "price": 1799.99,
+    "category": "Desktop",
+    "description": "The HP Omen 30L is a powerful gaming desktop with an Intel Core i9 processor, NVIDIA GeForce RTX 3080, and customizable RGB lighting."
+  },
+  {
+    "name": "Dell Inspiron 27 7000",
+    "price": 1299.99,
+    "category": "Desktop",
+    "description": "The Dell Inspiron 27 7000 is an all-in-one desktop with a 27-inch Full HD display, Intel Core i7 processor, and ample storage for all your needs."
+  },
+  {
+    "name": "Acer Aspire TC-895",
+    "price": 649.99,
+    "category": "Desktop",
+    "description": "The Acer Aspire TC-895 is a versatile desktop with an Intel Core i5 processor, 12GB of RAM, and a 512GB SSD, perfect for everyday computing tasks."
+  },
+  {
+    "name": "Lenovo Legion Tower 5i",
+    "price": 1399.99,
+    "category": "Desktop",
+    "description": "The Lenovo Legion Tower 5i is a gaming desktop with an Intel Core i7 processor, NVIDIA GeForce GTX 1660 Super, and a sleek, modern design."
+  },
+  {
+    "name": "MSI Trident 3",
+    "price": 1199.99,
+    "category": "Desktop",
+    "description": "The MSI Trident 3 is a compact gaming desktop with an Intel Core i7 processor, NVIDIA GeForce GTX 1660 Ti, and a unique, space-saving design."
+  },
+  {
+    "name": "Apple Mac Mini",
+    "price": 699.0,
+    "category": "Desktop",
+    "description": "The Apple Mac Mini features the powerful M1 chip, a compact design, and versatile connectivity options, making it a great addition to any setup."
+  },
+  {
+    "name": "Samsung Galaxy Book Pro",
+    "price": 1199.99,
+    "category": "Laptop",
+    "description": "The Samsung Galaxy Book Pro offers a sleek design, a vibrant AMOLED display, and powerful performance with 11th Gen Intel Core processors."
+  },
+  {
+    "name": "LG Gram 17",
+    "price": 1699.99,
+    "category": "Laptop",
+    "description": "The LG Gram 17 is an ultra-lightweight laptop with a large 17-inch display, long battery life, and 11th Gen Intel Core performance."
+  },
+  {
+    "name": "Alienware Aurora R12",
+    "price": 1999.99,
+    "category": "Desktop",
+    "description": "The Alienware Aurora R12 is a high-performance gaming desktop with Intel Core i9 processors, NVIDIA GeForce RTX 3080 graphics, and customizable RGB lighting."
+  },
+  {
+    "name": "Microsoft Surface Studio 2",
+    "price": 3499.99,
+    "category": "Desktop",
+    "description": "The Microsoft Surface Studio 2 is an all-in-one desktop with a stunning 28-inch touchscreen, powerful Intel Core i7 processor, and NVIDIA GeForce GTX 1070 graphics."
+  },
+  {
+    "name": "Dell G5 Gaming Desktop",
+    "price": 999.99,
+    "category": "Desktop",
+    "description": "The Dell G5 Gaming Desktop offers powerful performance with an Intel Core i7 processor, NVIDIA GeForce GTX 1660 Ti graphics, and a sleek design."
+  },
+  {
+    "name": "Asus ZenBook 14",
+    "price": 849.99,
+    "category": "Laptop",
+    "description": "The Asus ZenBook 14 offers a compact design, AMD Ryzen 5 processor, and long battery life. Perfect for productivity on the go."
+  },
+  {
+    "name": "HP Spectre x360",
+    "price": 1399.99,
+    "category": "Laptop",
+    "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a 13.3-inch touchscreen, 11th Gen Intel Core i7 processor, and premium design."
+  },
+  {
+    "name": "Dell Latitude 7420",
+    "price": 1599.99,
+    "category": "Laptop",
+    "description": "The Dell Latitude 7420 is a business laptop with a 14-inch display, Intel Core i7 processor, and extensive security features."
+  },
+  {
+    "name": "Lenovo Yoga C940",
+    "price": 1249.99,
+    "category": "Laptop",
+    "description": "The Lenovo Yoga C940 is a premium 2-in-1 laptop with a 14-inch 4K touchscreen, 10th Gen Intel Core i7 processor, and sleek design."
+  },
+  {
+    "name": "Razer Blade Stealth 13",
+    "price": 1799.99,
+    "category": "Laptop",
+    "description": "The Razer Blade Stealth 13 is a high-performance ultrabook with a 13.3-inch Full HD display, Intel Core i7 processor, and NVIDIA GeForce GTX 1650 Ti graphics."
+  },
+  {
+    "name": "Apple MacBook Pro 16-inch",
+    "price": 2399.0,
+    "category": "Laptop",
+    "description": "The Apple MacBook Pro 16-inch features a stunning Retina display, powerful Intel Core i9 processor, and AMD Radeon Pro 5500M graphics."
+  },
+  {
+    "name": "Microsoft Surface Pro 7",
+    "price": 749.99,
+    "category": "Laptop",
+    "description": "The Microsoft Surface Pro 7 is a versatile 2-in-1 laptop with a 12.3-inch touchscreen, Intel Core i5 processor, and detachable keyboard."
+  },
+  {
+    "name": "Acer Swift 3",
+    "price": 679.99,
+    "category": "Laptop",
+    "description": "The Acer Swift 3 is a lightweight and affordable laptop with a 14-inch Full HD display, AMD Ryzen 7 processor, and long battery life."
+  },
+  {
+    "name": "Dell Inspiron 15 7000",
+    "price": 849.99,
+    "category": "Laptop",
+    "description": "The Dell Inspiron 15 7000 is a versatile laptop with a 15.6-inch display, Intel Core i5 processor, and ample storage for all your needs."
+  },
+  {
+    "name": "HP Pavilion Gaming Laptop",
+    "price": 899.99,
+    "category": "Laptop",
+    "description": "The HP Pavilion Gaming Laptop offers powerful performance with an AMD Ryzen 5 processor, NVIDIA GeForce GTX 1650, and a 15.6-inch Full HD display."
+  },
+  {
+    "name": "Lenovo IdeaPad Flex 5",
+    "price": 649.99,
+    "category": "Laptop",
+    "description": "The Lenovo IdeaPad Flex 5 is a 2-in-1 laptop with a 14-inch touchscreen, AMD Ryzen 5 processor, and flexible design for versatile use."
+  },
+  {
+    "name": "Apple Mac Mini M1",
+    "price": 699.99,
+    "category": "Desktop",
+    "description": "The Apple Mac Mini with M1 chip offers powerful performance, a compact design, and versatile connectivity options for a variety of uses."
+  },
+  {
+    "name": "HP EliteDesk 800 G6",
+    "price": 1199.99,
+    "category": "Desktop",
+    "description": "The HP EliteDesk 800 G6 is a powerful business desktop with an Intel Core i7 processor, 16GB of RAM, and extensive security features."
+  },
+  {
+    "name": "Dell OptiPlex 3080",
+    "price": 599.99,
+    "category": "Desktop",
+    "description": "The Dell OptiPlex 3080 is an affordable and reliable desktop with an Intel Core i5 processor, 8GB of RAM, and ample storage for everyday tasks."
+  },
+  {
+    "name": "Lenovo ThinkCentre M720",
+    "price": 799.99,
+    "category": "Desktop",
+    "description": "The Lenovo ThinkCentre M720 is a compact desktop with an Intel Core i5 processor, 8GB of RAM, and robust security features for business use."
+  },
+  {
+    "name": "Asus ROG Strix G15",
+    "price": 1199.99,
+    "category": "Laptop",
+    "description": "The Asus ROG Strix G15 is a powerful gaming laptop with a 15.6-inch Full HD display, AMD Ryzen 7 processor, and NVIDIA GeForce GTX 1660 Ti graphics."
+  },
+  {
+    "name": "HP Omen 15",
+    "price": 1399.99,
+    "category": "Laptop",
+    "description": "The HP Omen 15 is a high-performance gaming laptop with a 15.6-inch Full HD display, Intel Core i7 processor, and NVIDIA GeForce RTX 2060 graphics."
+  },
+  {
+    "name": "Dell Alienware m15 R4",
+    "price": 1999.99,
+    "category": "Laptop",
+    "description": "The Dell Alienware m15 R4 is a premium gaming laptop with a 15.6-inch 4K UHD display, Intel Core i9 processor, and NVIDIA GeForce RTX 3070 graphics."
+  },
+  {
+    "name": "Acer Nitro 5",
+    "price": 999.99,
+    "category": "Laptop",
+    "description": "The Acer Nitro 5 is a budget-friendly gaming laptop with a 15.6-inch Full HD display, Intel Core i5 processor, and NVIDIA GeForce GTX 1650 graphics."
+  },
+  {
+    "name": "Lenovo Legion Y740",
+    "price": 1799.99,
+    "category": "Laptop",
+    "description": "The Lenovo Legion Y740 is a high-performance gaming laptop with a 15.6-inch Full HD display, Intel Core i7 processor, and NVIDIA GeForce RTX 2070 graphics."
+  }
+]

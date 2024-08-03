@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AJIZ STORE | Recherche</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajiz-org.github.io/element.js"></script>
   </head>
 
   <body>
@@ -103,132 +104,13 @@
         </form>
       </aside>
       <section>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3 289,00 TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3 289,00 TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3 289,00 TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
-        <article>
-          <img src="./images/mac.jpg" />
-          <h3>MacBook</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-            dolores?
-          </p>
-          <div class="flex">
-            <form>
-              <strong>Prix : 3289,00TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
+        <store-product price="3 289,00">
+          <span slot="name">MacBook</span>
+        </store-product>
+        <store-product price="2 289,00">
+          <span slot="name">Asus</span>
+        </store-product>
+        <script>elements('store-product')</script>
       </section>
     </main>
     <footer>
