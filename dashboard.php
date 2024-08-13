@@ -4,7 +4,11 @@ if(!isset($_SESSION['user'])) {
     header('Location: login.php');
     exit;
 }
-$user = $_SESSION['user'];
+$userId = $_SESSION['user'];
+require('db.php');
+$result = mysqli_query($mysqli, "SELECT * from users WHERE id=$userId");
+$user = mysqli_fetch_assoc($result);
+
 $userName = $user['name'];
 echo "Hello $userName";
 ?>
