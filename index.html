@@ -45,29 +45,29 @@
                 <br />
                 <div class="my-10"></div>
                 <label>
-                  <input type="radio" name="tri" value="all" /> Tous les prix <br />
+                  <input type="radio" name="tri" value="all" /> Tous les prix
+                  <br />
                   <div class="my-5"></div>
                 </label>
                 <label>
-                  <input type="radio" name="tri" value="800-1000" /> entre 800dt et
-                  1000dt <br />
+                  <input type="radio" name="tri" value="800-1000" /> entre 800dt
+                  et 1000dt <br />
                   <div class="my-5"></div>
                 </label>
                 <label>
-                  <input type="radio" name="tri" value="1000-1500" /> entre 1000dt
-                  et 1500dt <br />
+                  <input type="radio" name="tri" value="1000-1500" /> entre
+                  1000dt et 1500dt <br />
                   <div class="my-5"></div
                 ></label>
                 <label>
-                  <input type="radio" name="tri" value="1500-2000" /> entre 1500dt
-                  et 2000dt <br />
+                  <input type="radio" name="tri" value="1500-2000" /> entre
+                  1500dt et 2000dt <br />
                   <div class="my-5"></div
                 ></label>
                 <label>
                   <input type="radio" name="tri" value=">2000" /> plus de 2000dt
                   <br />
                 </label>
-     
               </div>
               <label>
                 <b>Trier par categories</b>
@@ -85,8 +85,6 @@
                 <a href="#">autres</a>
               </label>
             </div>
-
-
           </div>
           <div>
             <p>Nombre de resultat : 9</p>
@@ -103,18 +101,27 @@
           </div>
         </form>
       </aside>
-      <section>
-        <store-product price="3 289,00">
-          <span slot="name">MacBook</span>
-        </store-product>
-        <store-product price="2 289,00">
-          <span slot="name">Asus</span>
-        </store-product>
-        <script>elements('store-product')</script>
-      </section>
+      <section id="list-products"></section>
     </main>
     <footer>
       <p>Copyright Ⓒ - Ajiz Store - 2024</p>
     </footer>
+    <script>
+      elements("store-product");
+      async function handleProducts(response) {
+        const products = await response.json();
+        const containerElement = document.getElementById("list-products");
+        for (const product of products) {
+          containerElement.innerHTML =
+            containerElement.innerHTML +
+            `
+        <store-product price="${product["price"]}">
+          <span slot="name">${product["name"]}</span>
+          <span slot="description">${product["description"]}</span>
+        </store-product>`;
+        }
+      }
+      fetch("api/list-products.php").then(handleProducts);
+    </script>
   </body>
 </html>
