@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title> Login form </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <form class="test"> 
-      <h1> <label>Email :<input type="text" name="user"></h1> 
-        <label> Password : <input type="password" name="pwd"></label>
-
-     <h3><button> Login </butyon></h3>   
-        
-            
-    </form>
-    
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="https://ajiz-org.github.io/element.js"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="auth.php" method="POST" >
+        <h2>Login</h2>
+        <label><span>Email:</span><input type="email" name="email" required /></label>
+        <label><span>Mot de passe:</span><input type="password" name="password" required /></label>
+        <button>Login</button>
+        <p class="link">Vous n'avez pas de compte? <a href="register.html">Inscrivez vous</a></p>
+      </form>
+    </div>
+    <script src="js/redirect-if-auth.js"></script>
+  </body>
 </html>

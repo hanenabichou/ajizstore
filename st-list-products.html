@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="css/common.css" />
+<style>
+  section {
+    flex: 20 1 520px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: auto;
+    max-height: 100%;
+  }
+</style>
+<section>
+  <slot></slot>
+</section>

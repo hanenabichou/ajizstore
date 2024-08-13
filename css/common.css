@@ -1,0 +1,22 @@
+:host {
+  display: contents;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+}
+a,
+p {
+  margin-left: 10px;
+}
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
