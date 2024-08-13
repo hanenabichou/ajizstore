@@ -21,10 +21,15 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
+}
+button {
+    display: contents;
+    font-size: 1em;
 }
 
 /* end header */

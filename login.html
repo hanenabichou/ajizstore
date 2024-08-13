@@ -2,21 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <link rel="stylesheet" href="css/login.css" />
-    <script src="https://ajiz-org.github.io/element.js"></script>
+    <script src="/js/element.js"></script>
   </head>
   <body>
     <div class="login-container">
-      <form action="auth.php" method="POST" >
+      <form action="auth.php" method="POST">
         <h2>Login</h2>
-        <label><span>Email:</span><input type="email" name="email" required /></label>
-        <label><span>Mot de passe:</span><input type="password" name="password" required /></label>
+        <p class="error" hidden>Veuillez vérifier vos données</p>
+        <p class="register" hidden>Vous êtes bien enregistré, Veuillez saisir vos données</p>
+        <label
+          ><span>Email:</span><input type="email" name="email" required
+        /></label>
+        <label
+          ><span>Mot de passe:</span
+          ><input type="password" name="password" required
+        /></label>
         <button>Login</button>
-        <p class="link">Vous n'avez pas de compte? <a href="register.html">Inscrivez vous</a></p>
+        <p class="link">
+          Vous n'avez pas de compte? <a href="register.html">Inscrivez vous</a>
+        </p>
       </form>
     </div>
-    <script src="js/redirect-if-auth.js"></script>
+    <script src="js/redirect-if-auth.js" type="module"></script>
+    <script>
+      const q = new URLSearchParams(location.search)
+      if (q.has("error")) document.querySelector(".error").removeAttribute("hidden");
+      if (q.has("register")) document.querySelector(".register").removeAttribute("hidden");
+
+    </script>
   </body>
 </html>

@@ -49,6 +49,12 @@ button:hover {
   margin-top: 10px;
   text-align: center;
 }
+.error {
+  color: red;
+}
+.register {
+  color: green;
+}
 
 .link a {
   color: #5c67f2;

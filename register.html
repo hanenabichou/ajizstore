@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <link rel="stylesheet" href="css/login.css" />
-    <script src="https://ajiz-org.github.io/element.js"></script>
+    <script src="/js/element.js"></script>
   </head>
   <body>
     <div class="login-container">
-      <form action="auth.php" method="POST">
+      <form action="register.php" method="POST">
         <h2>Inscription</h2>
-        <label><span>Nom d'utilisateur:</span><input type="text" name="name" required /></label>
-        <label><span>Numéro de téléphone:</span><input type="email" name="email" required /></label>
-        <label><span>Email:</span><input type="phone" name="phone" required /></label>
-        <label><span>Mot de passe:</span><input type="password" name="password" required /></label>
+        <p class="error" hidden>Veuillez vérifier vos données</p>
+        <label
+          ><span>Nom d'utilisateur:</span
+          ><input type="text" name="name" required
+        /></label>
+        <label
+          ><span>Numéro de téléphone:</span
+          ><input type="phone" name="phone" required
+        /></label>
+        <label
+          ><span>Email:</span><input type="email" name="email"  required
+        /></label>
+        <label
+          ><span>Mot de passe:</span
+          ><input type="password" name="password" required
+        /></label>
         <button>Envoyer</button>
-        <p class="link">Vous avez déjà un compte? <a href="login.html">Connectez vous</a></p>
+        <p class="link">
+          Vous avez déjà un compte? <a href="login.html">Connectez vous</a>
+        </p>
       </form>
     </div>
-    <script>elements('ep-input', 'ep-button', 'ep-link')</script>
-    <script src="js/redirect-if-auth.php"></script>
+    <script>
+      elements("ep-input", "ep-button", "ep-link");
+    </script>
+    <script src="js/redirect-if-auth.js"></script>
+    <script>
+      if (new URLSearchParams(location.search).has("error")) {
+        document.querySelector(".error").removeAttribute("hidden");
+      }
+    </script>
   </body>
 </html>

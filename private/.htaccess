@@ -1,0 +1,4 @@
+# Place this inside the .htaccess file in the root folder or inside the subfolder itself
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>

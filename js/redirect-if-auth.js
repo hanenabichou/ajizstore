@@ -1,7 +1,5 @@
-window.addEventListener("pageshow", () => {
-  fetch("/api/me.php")
-    .then((s) => s.json())
-    .then((me) => {
-      if (me) location = "/";
-    });
+import { user } from "./user";
+
+user.then((me) => {
+  if (me) location = "/";
 });

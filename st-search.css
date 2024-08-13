@@ -56,3 +56,6 @@ p {
   color: #949494;
   text-align: justify;
 }
+.selected {
+    font-weight: bold;
+}

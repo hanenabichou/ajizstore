@@ -4,18 +4,27 @@
   <nav>
     <ul>
       <li><strong>AJIZ STORE</strong></li>
-      <li><a href="./index.html">Boutique</a></li>
-      <li><a href="#">Admin</a></li>
     </ul>
   </nav>
   <nav>
-    <ul>
-      <li><a href="#">Inscription</a></li>
-      <li><a href="#">Connexion</a></li>
-    </ul>
+    <ul class="actions"></ul>
   </nav>
 </header>
 <main><slot></slot></main>
 <footer>
   <p>Copyright Ⓒ - Ajiz Store - 2024</p>
 </footer>
+<script>
+  const user = import("./js/user").then(u=>u.user);
+  console.log('executing')
+  const actions = window.root.querySelector(".actions");
+  user.then((user) => {
+    actions.innerHTML = user
+      ? `
+<li><a href="profile.html">${user.name}</a></li>
+<li><form action="logout.php" method="post"><button><a>Logout</a></button></form></li>`
+      : `
+<li><a href="register.html">Inscription</a></li>
+<li><a href="login.html">Login</a></li>`;
+  });
+</script>

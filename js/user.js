@@ -1,0 +1,1 @@
+export const user = fetch("/api/me.php").then((s) => s.json())

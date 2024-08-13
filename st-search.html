@@ -1,13 +1,14 @@
 <link rel="stylesheet" href="css/common.css" />
 <link rel="stylesheet" href="st-search.css" />
 <aside>
-  <form>
+  <form action=".">
     <div class="top">
       <label>
         <b> Recherche </b>
         <br />
         <input
           type="search"
+          name="search"
           class="my-10"
           placeholder="Recherche"
           style="border-radius: 5px; border: none; padding: 7px"
@@ -19,49 +20,40 @@
       <br />
       <div class="my-10"></div>
       <label>
-        <input type="radio" name="tri" value="all" /> Tous les prix <br />
+        <input type="radio" name="price" value="all" /> Tous les prix <br />
         <div class="my-5"></div>
       </label>
       <label>
-        <input type="radio" name="tri" value="800-1000" /> entre 800dt et 1000dt
+        <input type="radio" name="price" value="800-1000" /> entre 800dt et
+        1000dt
         <br />
         <div class="my-5"></div>
       </label>
       <label>
-        <input type="radio" name="tri" value="1000-1500" /> entre 1000dt et
+        <input type="radio" name="price" value="1000-1500" /> entre 1000dt et
         1500dt <br />
         <div class="my-5"></div>
       </label>
       <label>
-        <input type="radio" name="tri" value="1500-2000" /> entre 1500dt et
+        <input type="radio" name="price" value="1500-2000" /> entre 1500dt et
         2000dt <br />
         <div class="my-5"></div>
       </label>
       <label>
-        <input type="radio" name="tri" value=">2000" /> plus de 2000dt
+        <input type="radio" name="price" value=">2000" /> plus de 2000dt
         <br />
       </label>
       <br />
-      <label>
+      <div class="categories">
         <b>Trier par categories</b>
-        <br />
-        <div class="my-10"></div>
-        <a href="#">all</a>
-        <br />
-        <div class="my-10"></div>
-        <a href="#">desktop</a>
-        <br />
-        <div class="my-10"></div>
-        <a href="#">gamer</a>
-        <br />
-        <div class="my-10"></div>
-        <a href="#">autres</a>
-      </label>
+      </div>
     </div>
     <div>
-      <p>Nombre de resultat : 9</p>
+      <p>Nombre de resultat : <slot name="nbr"></slot></p>
+      <input type="submit" style="display: none" />
       <input
-        type="reset"
+        type="submit"
+        formaction="redirect.php"
         value="Supprimer les filtres"
         style="
           color: #fff;
@@ -73,3 +65,23 @@
     </div>
   </form>
 </aside>
+<script>
+  const form = root.querySelector("form");
+  const query = new URLSearchParams(location.search);
+  const price = query.get("price") ?? "all";
+  root
+    .querySelector('[type="search"]')
+    .setAttribute("value", query.get("search") ?? '');
+  form.querySelectorAll('[name="price"]').forEach((input) => {
+    input.checked = price == input.value;
+    input.onclick = () => form.submit();
+  });
+  const categ = query.get('category') ?? '';
+  ("," + host.getAttribute('categories')).split(",").forEach((category) => {
+    const query = new URLSearchParams(location.search);
+    query.set("category", category);
+    root.querySelector(".categories").innerHTML += `<br />
+      <div class="my-10"></div>
+      <a href="?${query}" class="${categ == category ? 'selected' : ''}">${category || "all"}</a>`;
+  });
+</script>
