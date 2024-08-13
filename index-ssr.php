@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AJIZ STORE | Recherche</title>
   <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <script src="https://ajiz-org.github.io/element.js"></script>
+  </head>
 
 <body>
   <header>
@@ -93,23 +94,17 @@
     <section>
     <?php
     require('./products.php');
-    foreach ($products as $product) { ?>
-      <article>
-          <img src="./images/mac.jpg" />
-          <h3><?=$product['name']?></h3>
-          <p><?=$product['description']?></p>
-          <div class="flex">
-            <form>
-              <strong>Prix : <?=$product['price']?> TND</strong>
-              <button class="btn">Ajouter au panier</button>
-            </form>
-          </div>
-        </article>
+    foreach ($products as $product) { 
+  ?>  <store-product price="<?=$product["price"]?>">
+        <span slot="name"><?=$product["name"]?></span>
+        <span slot="description"><?=$product["description"]?></span>
+      </store-product>
     <?php } ?>
     </section>
   </main>
   <footer>
     <p>Copyright Ⓒ - Ajiz Store - 2024</p>
   </footer>
+  <script>elements("store-product")</script>
 </body>
 </html>
